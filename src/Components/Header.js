@@ -1,10 +1,11 @@
 import './Header.css';
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const menuRef = useRef(null);
 
     const navLinks = [
         { name: 'Despre', to: 'despre' },
@@ -17,6 +18,22 @@ const Header = () => {
     const handleLinkClick = () => {
         setIsOpen(false);
     };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+
+        if (isOpen) {
+            document.addEventListener('mousedown', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isOpen]);
 
     return (
         <header className="header">
@@ -34,7 +51,7 @@ const Header = () => {
                     className="logo-link"
                 >
                     <div className='logo-image'>
-                        <img src='/assets/logo-header.png' alt='logo'/>
+                        <img src='/assets/logo-header.png' alt='logo' />
                         BLAST MMA
                     </div>
                 </Link>
@@ -66,6 +83,7 @@ const Header = () => {
             {/* Mobile Menu */}
             {isOpen && (
                 <motion.div
+                    ref={menuRef}
                     className="mobile-menu"
                     initial={{ x: '100%' }}
                     animate={{ x: 0 }}
