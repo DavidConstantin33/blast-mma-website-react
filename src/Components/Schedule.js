@@ -9,7 +9,6 @@ const scheduleData = [
     { day: 'Joi', hours: '08:00 - 10:00', theme: 'Tehnica MMA' },
     { day: 'Vineri', hours: '20:30 - 22:00', theme: 'Grappling' },
     { day: 'Sâmbătă', hours: '14:00 - 15:30', theme: 'Tehnica MMA' },
-    { day: 'Duminică', hours: '14:00 - 15:30', theme: 'Sparring' },
 ];
 
 const Schedule = () => {
