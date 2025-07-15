@@ -29,7 +29,7 @@ const About = () => {
                         te ajutăm să devii cea mai bună versiune a ta, prin antrenamente complete și o comunitate unită.
                     </p>
                     <p>
-                        Vino să simți atmosfera de luptă, progres și respect, într-o sală modernă, pregătită pentru
+                        Vino să simți atmosfera de luptă, progres și respect, într-o sală pregătită pentru
                         performanță și evoluție personală.
                     </p>
                 </motion.div>
