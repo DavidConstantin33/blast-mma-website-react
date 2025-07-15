@@ -13,6 +13,7 @@
 
 @media (max-width: 900px) {
   section {
+    overflow-x: hidden!important;
     padding: 0!important;
   }
 }
