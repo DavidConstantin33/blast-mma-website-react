@@ -1,0 +1,76 @@
+.home {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: url('../../public/assets/placeholder-bg.jpg') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.content h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.content p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.content button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.2rem;
+    }
+    .content p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+    .content button {
+        width: 80%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    .overlay {
+        padding: 0;
+    }
+}

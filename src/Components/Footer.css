@@ -1,0 +1,14 @@
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 0.95rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+.footer p {
+    margin: 0.3rem 0;
+    color: #dddddd;
+}
