@@ -16,7 +16,7 @@ const Schedule = () => {
         <section id="orar" className="schedule">
             <div className="schedule-container">
                 <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0.1, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
@@ -28,7 +28,7 @@ const Schedule = () => {
                         <motion.div
                             className="schedule-card"
                             key={index}
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0.1, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             viewport={{ once: true }}

@@ -51,7 +51,7 @@
     .about-container {
         flex-direction: column;
         gap: 2rem;
-        padding: 1rem 2rem;
+        padding: 3rem 2rem;
     }
 
     .about-text h2 {
@@ -64,6 +64,7 @@
     }
 
     .about-image img {
+        box-shadow: none;
         width: 80%;
         max-width: 300px;
     }

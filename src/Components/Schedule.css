@@ -70,7 +70,7 @@
 
 @media (max-width: 900px) {
     .schedule-container {
-        padding: 1em 0;
+        padding: 5em 0;
     }
 
     .schedule-grid {
@@ -83,7 +83,7 @@
 
     .schedule-card {
         max-width: 300px;
-        width: 90%;
+        width: 60%;
         padding: 1.5rem 1rem;
     }
 }
