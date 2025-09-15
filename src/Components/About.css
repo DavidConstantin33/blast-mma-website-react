@@ -1,6 +1,6 @@
 .about {
     background-color: #ffffff;
-    padding: 4rem 1rem;
+    padding: 4em 1rem;
     display: flex;
     justify-content: flex-start;
     min-height: 100vh;
@@ -9,6 +9,7 @@
 }
 
 .about-container {
+    padding-top: 5%;
     max-width: 1200px;
     display: flex;
     align-items: center;
